@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio - Riwaaz Mahan Chauguthi</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!-- Hero + Navigation -->
+	<header id="hero">
+		<!-- Video background -->
+		<video autoplay loop muted playsinline id="video-background">
+			<!-- Change the src to the actual path of your video file -->
+			<source src="background-loop.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+
+		<nav class="navbar">
+			<span class="logo">Riwaaz.dev</span>
+
+			<button class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation" id="menu-button">
+				☰
+			</button>
+
+			<ul class="nav-links">
+				<li><a href="#about">About</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+
+		<div class="hero-content">
+			<p class="hero-subtitle">Frontend Developer & Student</p>
+			<h1>Hi, I'm <span>Riwaaz Mahan Chauguthi</span></h1>
+			<p class="hero-text">
+				I build clean, responsive websites and love exploring modern frontend tools.
+			</p>
+			<a href="#projects" class="btn-primary">View My Projects</a>
+		</div>
+	</header>
+
+	<main>
+		<!-- About -->
+		<section id="about" class="section">
+			<h2>About Me</h2>
+			<p>
+				Hello! My name is <strong>Riwaaz Mahan Chauguthi</strong>. I’m a college student and
+				aspiring frontend developer. I enjoy turning ideas into interactive, visually-appealing
+				web experiences using HTML, CSS, and JavaScript.
+			</p>
+			<p>
+				I’m currently focused on improving my fundamentals, building real projects, and
+				creating a strong foundation for more advanced frontend frameworks in the future.
+			</p>
+		</section>
+
+		<!-- Skills -->
+		<section id="skills" class="section section-alt">
+			<h2>Skills</h2>
+			<p>These are the core technologies and tools I’m practicing right now:</p>
+			<div class="skills-list">
+				<span class="skill-tag">HTML5</span>
+				<span class="skill-tag">CSS3 (Flexbox & Grid)</span>
+				<span class="skill-tag">Responsive Design</span>
+				<span class="skill-tag">JavaScript (DOM)</span>
+				<span class="skill-tag">Git & GitHub</span>
+				<span class="skill-tag">UI/UX Basics</span>
+			</div>
+		</section>
+
+		<!-- Projects (Grid) -->
+		<section id="projects" class="section">
+			<h2>Projects</h2>
+			<p class="section-intro">
+				Here are a few simple projects that represent my current level. As I grow, I’ll keep
+				updating this section with better work.
+			</p>
+
+			<div id="projects-grid">
+				<article class="project-card">
+					<h3>Responsive Landing Page</h3>
+					<p>
+						A clean landing page layout using Flexbox and basic media queries to make it
+						look good on mobile and desktop.
+					</p>
+					<ul>
+						<li>Built with: HTML, CSS</li>
+						<li>Focus: Layout & Typography</li>
+					</ul>
+				</article>
+
+				<article class="project-card">
+					<h3>Portfolio Prototype</h3>
+					<p>
+						This very website – created as part of an advanced frontend workshop to
+						practice semantic HTML, CSS Grid, and JavaScript.
+					</p>
+					<ul>
+						<li>Built with: HTML, CSS, JS</li>
+						<li>Focus: Semantic structure & interactivity</li>
+					</ul>
+				</article>
+
+				<article class="project-card">
+					<h3>Simple JS Interaction</h3>
+					<p>
+						A small page where buttons and inputs dynamically change content on the
+						screen, helping me understand DOM manipulation.
+					</p>
+					<ul>
+						<li>Built with: HTML, CSS, JS</li>
+						<li>Focus: Events & DOM</li>
+					</ul>
+				</article>
+			</div>
+		</section>
+
+		<!-- Contact -->
+		<section id="contact" class="section section-alt">
+			<h2>Contact</h2>
+			<p>
+				If you’d like to connect, collaborate, or just say hi, feel free to send me a message
+				using the form below.
+			</p>
+
+			<form id="contact-form">
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name" required>
+
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" required>
+
+				<label for="message">Message</label>
+				<textarea id="message" name="message" rows="5" required></textarea>
+
+				<button type="submit">Send Message</button>
+
+				<div id="form-message" class="form-message" aria-live="polite"></div>
+			</form>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; <span id="year"></span> Riwaaz Mahan Chauguthi. All rights reserved.</p>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
